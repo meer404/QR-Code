@@ -16,8 +16,8 @@ let qrCode;
         text: text,
         width: 256,
         height: 256,
-        colorDark: "#00ffff",
-        colorLight: "#000000",
+        colorDark: "#000000",
+        colorLight: "#ffffff",
         correctLevel: QRCode.CorrectLevel.H
       });
 
@@ -35,7 +35,7 @@ let qrCode;
         const canvas = document.querySelector("#qrcode canvas");
         const link = document.createElement("a");
         link.href = canvas.toDataURL("image/png");
-        link.download = "neon-qrcode.png";
+        link.download = "qrcode.png";
         link.click();
       }
     }
