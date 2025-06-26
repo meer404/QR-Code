@@ -25,8 +25,45 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link active" href="#">سەرەتا</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">دەربارە</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">پەیوەندی</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="event.preventDefault(); document.getElementById('about-popup').style.display='block';">دەربارە</a></li>
+          <div id="about-popup" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(30,41,59,0.8); z-index:9999;" dir="rtl" style="text-align: right;"
+                    onclick="if(event.target === this) this.style.display='none';">
+                    <div style="background:linear-gradient(90deg, #3b82f6, #8b5cf6); color:#dbeafe; max-width:400px; width:90%; 
+                    padding:2rem; border-radius:1rem; box-shadow:0 4px 32px rgba(0,0,0,0.2); position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);">
+                        <button onclick="document.getElementById('about-popup').style.display='none';" 
+                            style="position:absolute; top:1rem; right:1rem; background:none; border:none; font-size:2rem; color:#dbeafe; cursor:pointer;">&times;</button>
+                            <br>
+                        <h4 class="fw-bold mb-2">دەربارە</h4>
+                        <p>سڵاو، من میر محمد، وێب دیڤلۆپەرێکم لە کوردستانەوە. <br>
+                             من پێمخۆشە کە بەرنامەی وێبی داهێنەرانە دروست بکەم و بەدوای تەکنەلۆژیای نوێدا بگەڕێم. <br>
+                              ئەم QR Code Generator یەکێکە لە پڕۆژەکانم بۆ یارمەتیدانی بەکارهێنەران بۆ دروستکردنی QR code بە ئاسانی.
+                            <br>
+                            <br>
+                           
+                            <p> سەردانی ماڵپەڕەکەم بکە 
+                            <a href="https://mir.codes" target="_blank" class="text-decoration-none text-info">mir.codes</a> بۆ زانیاری و پڕۆژەیی زیاتر.
+                            </p>
+                        </p>
+                    </div>
+          </div> 
+          <li class="nav-item"><a class="nav-link" href="#" onclick="event.preventDefault(); document.getElementById('contact-popup').style.display='block';">پەیوەندی</a></li>
+          <div id="contact-popup" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(30,41,59,0.8); z-index:9999;" 
+                    onclick="if(event.target === this) this.style.display='none';">
+                    <div style="background:linear-gradient(90deg, #3b82f6, #8b5cf6); color:#dbeafe; max-width:400px; width:90%; 
+                       padding:2rem; border-radius:1rem; box-shadow:0 4px 32px rgba(0,0,0,0.2); position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);">
+                        <button onclick="document.getElementById('contact-popup').style.display='none';" 
+                            style="position:absolute; top:1rem; right:1rem; background:none; border:none; font-size:2rem; color:#dbeafe; cursor:pointer;">&times;</button>
+                        <br>
+                        <h4 class="fw-bold mb-2">پەیوەندی</h4>
+                        <p>
+                           <li><strong>Phone Number : </strong><a href="tel:+9647730122003" style="color: #fff;" class="text-decoration-none" >+9647730122003 </a></li>
+                           <li><strong>Email : </strong> <a href="mailto:meermohammed180@gmail.com" style="color: #fff;" class="text-decoration-none">meermohammed180@gmail.com</a></li>
+                             <li><strong>Vist My Site : </strong><a href="https://mir.codes" target="_blank"  style="color: #fff;">mir.codes</a></li>
+                        </p>
+                    </div>
+          </div> 
+
+
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">زمان-Language</a>
             <ul class="dropdown-menu dropdown-menu-dark">

@@ -23,8 +23,43 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+
+        <li class="nav-item"><a class="nav-link" href="#" onclick="event.preventDefault(); document.getElementById('about-popup').style.display='block';">About</a></li>
+        <div id="about-popup" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(30,41,59,0.8); z-index:9999;"
+                    onclick="if(event.target === this) this.style.display='none';">
+                    <div style="background:linear-gradient(90deg, #3b82f6, #8b5cf6); color:#dbeafe; max-width:400px; width:90%; 
+                    padding:2rem; border-radius:1rem; box-shadow:0 4px 32px rgba(0,0,0,0.2); position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);">
+                        <button onclick="document.getElementById('about-popup').style.display='none';" 
+                            style="position:absolute; top:1rem; right:1rem; background:none; border:none; font-size:2rem; color:#dbeafe; cursor:pointer;">&times;</button>
+                        <h4 class="fw-bold mb-2">About</h4>
+                        <p>
+                            Hi, I am Mir Mohammed, a passionate web developer from Kurdistan. <br>
+                            I love creating innovative web applications and exploring new technologies. <br> 
+                            This QR Code Generator is one of my projects to help users easily generate QR codes. <br>
+                            <br>
+                            visit my site <a href="https://mir.codes" target="_blank" class="text-decoration-none text-info">mir.codes</a> for more projects and information.
+                        </p>
+                    </div>
+          </div>  
+
+
+
+        <li class="nav-item"><a class="nav-link" href="#" onclick="event.preventDefault(); document.getElementById('contact-popup').style.display='block';">Contact</a></li>
+
+        <div id="contact-popup" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(30,41,59,0.8); z-index:9999;"
+                    onclick="if(event.target === this) this.style.display='none';">
+                    <div style="background:linear-gradient(90deg, #3b82f6, #8b5cf6); color:#dbeafe; max-width:400px; width:90%; 
+                    padding:2rem; border-radius:1rem; box-shadow:0 4px 32px rgba(0,0,0,0.2); position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);">
+                        <button onclick="document.getElementById('contact-popup').style.display='none';" 
+                            style="position:absolute; top:1rem; right:1rem; background:none; border:none; font-size:2rem; color:#dbeafe; cursor:pointer;">&times;</button>
+                        <h4 class="fw-bold mb-2">Contact</h4>
+                        <p>
+                           <li><strong>Phone Number : </strong><a href="tel:+9647730122003" style="color: #fff;" class="text-decoration-none" >+9647730122003 </a></li>
+                           <li><strong>Email : </strong> <a href="mailto:meermohammed180@gmail.com" style="color: #fff;" class="text-decoration-none">meermohammed180@gmail.com</a></li>
+                             <li><strong>Vist My Site : </strong><a href="https://mir.codes" target="_blank"  style="color: #fff;">mir.codes</a></li>
+                        </p>
+                    </div>
+        </div> 
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Language</a>
           <ul class="dropdown-menu dropdown-menu-dark">
