@@ -62,13 +62,14 @@ html, body {
       background-color: #111;
     }
     .social-icons a {
-    color: #6c757d;
-    font-size: 1.5rem;
-    margin: 0 10px;
-    transition: color 0.3s ease;
+      
+    color: #6c757d !important;
+    font-size: 1.5rem !important;
+    margin: 0 10px !important;
+    transition: color 0.3s ease !important;
 }
 
 .social-icons a:hover {
-    color: #0ff;
-    text-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+    color: #0ff !important;
+    text-shadow: 0 0 20px #0ff, 0 0 40px #0ff !important;
 }
